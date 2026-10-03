@@ -22,4 +22,24 @@ class Color {
     void setGvalue(int g) {gvalue = g;}
     int getBvalue() {return bvalue;}
     void setBvalue(int b) {bvalue = b;}
+    void print() {
+        cout << "Color name: " << name << endl;
+        cout << "Red value: " << rvalue << endl;
+        cout << "Green value: " << gvalue << endl;
+        cout << "Blue value: " << bvalue << endl;
+    }
 };
+
+int main() {
+    Color nothing;
+    nothing.print();
+
+    Color brown("brown");
+    brown.print();
+
+    Color teal("teal", 157, 210, 500);
+    teal.print();
+
+    Color cyan("cyan", 123, 216, 513);
+    cyan.print();
+}
